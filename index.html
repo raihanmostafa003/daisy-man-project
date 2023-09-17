@@ -8,22 +8,12 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        'hero-bg': "url ('./images/yellow-bg.jpg')"
-                    }
-                }
-            }
-        }
-    </script>
+    
 
 </head>
 
 <body>
-
+    
     <!-- header section -->
     <header>
         <!-- navbar -->
@@ -77,7 +67,7 @@
         </nav>
         <!-- hero section -->
         <section>
-            <div class="hero min-h-[calc(100vh-66px)]" style="background-image: url(./images/yellow-bg.jpg);">
+            <div class="hero min-h-[calc(100vh-66px)]" style="background-image: url(./images/yellow-bg.jpg);" >
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
@@ -168,8 +158,6 @@
             <!-- card -->
             <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
-
-
                 <div class="card bg-base-100 shadow-xl">
                     <figure><img src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif" alt="" /></figure>
                     <div class="card-body">
@@ -211,14 +199,67 @@
                     </div>
                 </div>
 
-
-
-
             </div>
+        </section>
 
-
+        <!-- acordian orFrequently section -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-10 my-10 ">
+            <div class="text-center pb-5">
+                <h1 class="text-2xl md:text-4xl">Frequently Asked Questions</h1>
+                <p class="text-sm">Browse from a various collections</p>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                    How can i Purchase?                  
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  What's the delivery system?
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What's the payment system
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+            
         </section>
     </main>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
 </body>
 
